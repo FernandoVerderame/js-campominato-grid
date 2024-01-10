@@ -11,9 +11,10 @@ const totalCells = rows * cols; // 100
 
 
 // ! FUNZIONI
-const createCell = () => {
+const createCell = content => {
     const newCell = document.createElement('div');
     newCell.className = 'cell';
+    newCell.innerText = content;
     return newCell;
 }
 
@@ -23,10 +24,10 @@ const createCell = () => {
 button.addEventListener('click', function() {
 
     // Creazione ciclo for per ottenere la griglia
-    for (let i = 0; i < totalCells; i++) {
+    for (let i = 1; i <= totalCells; i++) {
 
         // Creare una cella
-        const cell = createCell();
+        const cell = createCell(i);
 
         // Aggiungo la cella in pagina
         grid.appendChild(cell);
