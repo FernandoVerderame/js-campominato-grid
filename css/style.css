@@ -4,6 +4,9 @@ img {
     display: inline-block;
 }
 
+/* ? Utilities */
+
+
 /* Header */
 header img {
     width: 80px;
@@ -16,4 +19,31 @@ header button {
 
 header h1 {
     font-weight: 700;
+}
+
+/* Main */
+main {
+    background-color: aquamarine;
+    height: calc(100vh - 80px);
+}
+
+/* GRID */
+#grid {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#grid .cell {
+    cursor: pointer;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+}
+
+.cell.clicked {
+    background-color: blue;
 }
