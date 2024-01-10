@@ -11,6 +11,11 @@ const totalCells = rows * cols; // 100
 
 
 // ! FUNZIONI
+/**
+ * Funzione utile alla creazione delle celle
+ * @param {number} content Il numero contenuto nella cella
+ * @returns Creazione della cella
+ */
 const createCell = content => {
     const newCell = document.createElement('div');
     newCell.className = 'cell';
