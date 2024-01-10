@@ -39,6 +39,6 @@ buon lavoro!
 2. Scrivo i dati di partenza
 3. Collego il bottone play ad un evento per far comparire la griglia
 3. Creo un ciclo
-4. Scrivo una funzione per la creazione le celle
+4. Scrivo una funzione per la creazione delle celle
 5. Assegno ad ogni cella un numero da 1 a 100
 6. Collego al click della cella lo sfondo azzurro e lo stampiamo in console
