@@ -29,3 +29,16 @@ Di cosa ho bisogno per generare i numeri?
 Proviamo sempre prima con dei console.log() per capire se stiamo ricevendo i dati giusti.
 Le validazioni e i controlli possiamo farli anche in un secondo momento.
 buon lavoro!
+
+
+
+
+
+## SCALETTA
+1. Recupero la griglia
+2. Scrivo i dati di partenza
+3. Collego il bottone play ad un evento per far comparire la griglia
+3. Creo un ciclo
+4. Scrivo una funzione per la creazione le celle
+5. Assegno ad ogni cella un numero da 1 a 100
+6. Collego al click della cella lo sfondo azzurro e lo stampiamo in console
