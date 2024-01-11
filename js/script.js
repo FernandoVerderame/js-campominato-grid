@@ -3,11 +3,10 @@
 // Recuperiamo la griglia
 const grid = document.getElementById('grid');
 const button = document.querySelector('button');
+const form = document.querySelector('form');
+const selectField = document.getElementById('difficoltà');
 
-// Dati di partenza
-const rows = 10;
-const cols = 10;
-const totalCells = rows * cols; // 100
+
 
 
 // ! FUNZIONI
@@ -26,7 +25,40 @@ const createCell = content => {
 
 // ! EFFETTIVO SVOLGIMENTO DEL PROGRAMMA
 // Creazione della griglia al click del bottone Play
-button.addEventListener('click', function() {
+form.addEventListener('submit', function(event) {
+    // ! Impedisco il comportamento di default
+    event.preventDefault();
+
+    // Cambio il testo del bottone
+    button.innerText = 'Ricomincia';
+
+    // Svuota la griglia
+    grid.innerText = '';
+
+    //Recuperiamo il valore
+    const inputChoice = selectField.value;
+
+    // Assegno la classe alla griglia
+    grid.classList.add(inputChoice);
+
+    // Determino quante rows e quante cols voglio
+    let rows = 10;
+    let cols = 10;
+
+    switch (inputChoice) {
+        case 'hard':
+            rows = 7;
+            cols = 7;
+            break;
+        case 'medium':
+            rows = 9;
+            cols = 9;
+            break;
+    }
+
+    const totalCells = rows * cols;
+
+
 
     // Creazione ciclo for per ottenere la griglia
     for (let i = 1; i <= totalCells; i++) {
