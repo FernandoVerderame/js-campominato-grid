@@ -68,7 +68,7 @@ form.addEventListener('submit', function(event) {
 
         // Al click stampo in console il numero della cella, poi la coloriamo di azzurro
         cell.addEventListener('click', () => {
-            cell.classList.toggle('clicked');
+            cell.classList.add('clicked');
             console.log(i);
         })
 
